@@ -1,2 +1,2 @@
 # Skill-Connect
-Offer/Hire services
+Offer your skills. get hired
