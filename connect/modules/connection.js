@@ -1,9 +1,21 @@
-require('dotenv').config();
-const mongoose = require ("mongoose");
-var db = mongoose.connect(
-    `mongodb+srv://loukas_pas:pO8aDqaPPZHS6ANs@cluster0.ahcnc1p.mongodb.net/skillconnect?retryWrites=true&w=majority`
-    
-    );
+const mongoose = require("mongoose");
+require ("dotenv").config();
+const uri = process.env.MONGODB_URI;
 
+
+const connectionParams={
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+};
+
+async function db() {
+  try {
+    await mongoose.connect(uri, connectionParams);
+    console.log("Connected to database.");
+  } catch (error) {
+    console.log("Could not connect to database.", error);
+  }
+}
 
 module.exports = db;
+
