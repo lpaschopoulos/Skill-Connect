@@ -52,7 +52,7 @@
   margin-bottom: 2rem;
 }
 
-.home-page .cta-button {
+.home-page .about-button {
   display: inline-block;
   padding: 1rem 2rem;
   background-color: #007bff;
@@ -63,7 +63,7 @@
   transition: background-color 0.3s ease;
 }
 
-.home-page .cta-button:hover {
+.home-page .about-button:hover {
   background-color: #0056b3;
 }
 
@@ -127,4 +127,6 @@
 .search-button:hover {
   background-color: #0056b3;
 }
+
+
 

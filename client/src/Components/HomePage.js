@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
-    var navigate = useNavigate();
+  var navigate = useNavigate();
 
   const [searchQuery, setSearchQuery] = useState('');
   function login(){
@@ -13,6 +13,10 @@ const HomePage = () => {
   function signup(){
     navigate ("/signup");
   }
+  function about(){
+    navigate ("/about");
+  }
+
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -30,7 +34,7 @@ const HomePage = () => {
         <h1>Skill Connect</h1>
       </header>
       <div className="content">
-        <h2 className="title">Connecting Clients with Skilled Individuals</h2>
+        <h2 className="title">Connecting Talent with Opportunities</h2>
         <div className="login-signup-button">
         <button onClick = {()=>{ login();}}>Login</button>
         <button onClick = {()=>{ signup();}}>Signup</button>
@@ -47,7 +51,9 @@ const HomePage = () => {
           />
           <button type="submit" className="search-button">Search</button>
         </form>
-        <Link to="/services" className="cta-button">Browse Skills</Link>
+        <div className="about-button-container">
+        <button onClick = {()=>{about();}} className="about-button">About</button>
+        </div>
       </div>
     </div>
   );

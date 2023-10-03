@@ -1,0 +1,50 @@
+.browse-skills {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.browse-skills h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.bullet-list ul {
+  font-size: 20px;
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.process-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.process-list ul {
+  font-size: 20px;
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.solution-text {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+/* Additional styles for enhanced appearance */
+.browse-skills {
+  text-align: center;
+}
+
+.bullet-list ul li,
+.process-list ul li {
+  text-align: left;
+}
+
+.solution-text {
+  text-align: center;
+}
